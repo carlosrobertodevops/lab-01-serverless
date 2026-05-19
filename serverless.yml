@@ -39,5 +39,5 @@ custom:
   localstack:
     stages:
       - local
-    host: ${env:LOCALSTACK_HOST, 'http://localhost'}
+    host: ${env:SERVERLESS_LOCALSTACK_HOST, 'http://localhost'}
     edgePort: ${env:EDGE_PORT, 4566}

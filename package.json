@@ -17,7 +17,7 @@
     "remove:local": "set -a; [ -f .env ] && . ./.env; [ -f .env.local ] && . ./.env.local; [ -f .env.network ] && . ./.env.network; set +a; sls remove --stage ${STAGE:-local}",
     "print": "npm run print:local",
     "print:local": "set -a; [ -f .env ] && . ./.env; [ -f .env.local ] && . ./.env.local; [ -f .env.network ] && . ./.env.network; set +a; sls print --stage ${STAGE:-local}",
-    "doctor:env": "set -a; [ -f .env ] && . ./.env; [ -f .env.local ] && . ./.env.local; [ -f .env.network ] && . ./.env.network; set +a; echo STAGE=$STAGE; echo AWS_ENDPOINT_URL=$AWS_ENDPOINT_URL; echo SERVERLESS_DEPLOYMENT_BUCKET=$SERVERLESS_DEPLOYMENT_BUCKET; echo HTTP_LISTENER_ARN=$HTTP_LISTENER_ARN; echo VPC_ID=$VPC_ID; echo SUBNET_ID_1=$SUBNET_ID_1; echo SUBNET_ID_2=$SUBNET_ID_2; echo SECURITY_GROUP_ID=$SECURITY_GROUP_ID"
+    "doctor:env": "set -a; [ -f .env ] && . ./.env; [ -f .env.local ] && . ./.env.local; [ -f .env.network ] && . ./.env.network; set +a; echo STAGE=$STAGE; echo LOCALSTACK_HOST=$LOCALSTACK_HOST; echo SERVERLESS_LOCALSTACK_HOST=$SERVERLESS_LOCALSTACK_HOST; echo AWS_ENDPOINT_URL=$AWS_ENDPOINT_URL; echo SERVERLESS_DEPLOYMENT_BUCKET=$SERVERLESS_DEPLOYMENT_BUCKET; echo HTTP_LISTENER_ARN=$HTTP_LISTENER_ARN; echo VPC_ID=$VPC_ID; echo SUBNET_ID_1=$SUBNET_ID_1; echo SUBNET_ID_2=$SUBNET_ID_2; echo SECURITY_GROUP_ID=$SECURITY_GROUP_ID"
   },
   "engines": {
     "node": ">=20 <25"
