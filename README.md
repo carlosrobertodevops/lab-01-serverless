@@ -1,4 +1,4 @@
-# oxetech
+# oxetech - exemplo - sala de aula
 
 # lab-01-serverless
 
