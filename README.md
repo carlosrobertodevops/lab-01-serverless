@@ -1,6 +1,11 @@
-# oxetech
+# OXETEC - AULA - DIA 18/05/2026
 
 # lab-01-serverless
+
+> Toda infra => Terraform
+> Lambda => Serverless Framework
+
+# 1 - PASSO
 
 ## usar o npm para poder testar a lambda em JS
 
@@ -14,7 +19,9 @@ npm i
 localstack status -d
 ```
 
-## 01 subir a arquitetura via terraform
+# 2 - PASSO
+
+## Subir a arquitetura via terraform
 
 ```
 ## instalar o tfloca
@@ -35,5 +42,5 @@ npm run infra:apply
 ## 02 Subir as funções lambdas via Serverless Framweworks
 
 ```
-bom run deploy
+npm run deploy
 ```
