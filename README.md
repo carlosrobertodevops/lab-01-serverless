@@ -1,8 +1,15 @@
+# oxetech
+
 # lab-01-serverless
 
+## usar o npm para poder testar a lambda em JS
 
-## 
+```
+npm i
+```
+
 ## Subir o LocalStack
+
 ```
 localstack status -d
 ```
@@ -10,15 +17,22 @@ localstack status -d
 ## 01 subir a arquitetura via terraform
 
 ```
-## oinstalar o tfloca
+## instalar o tfloca
 pipx install terraform-local
 tflocal plan
-tflocal apply ### depois yes
+tflocal apply
 ```
+
+ou
+
+```
+npm run infra:init
+npm run infra:apply
+
+```
+
 ## 02 Subir as funções lambdas via Serverless Framweworks
+
 ```
-## oinstalar o tfloca
-pipx install terraform-local
-tflocal plan
-tflocal apply ### depois yes
+bom run deploy
 ```
