@@ -19,6 +19,7 @@ localstack status -d
 ```
 ## instalar o tfloca
 pipx install terraform-local
+cd terraform
 tflocal plan
 tflocal apply
 ```
