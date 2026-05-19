@@ -8,6 +8,11 @@ provider:
   deploymentBucket:
     name: ${env:SERVERLESS_DEPLOYMENT_BUCKET, 'serverless-elb-local-deployment-bucket'}
 
+package:
+  patterns:
+    - '!**'
+    - handler.js
+
 functions:
   hello1:
     handler: handler.hello1
