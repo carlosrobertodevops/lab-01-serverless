@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # OXETEC - AULA - DIA 18/05/2026
+=======
+# oxetech - exemplo - sala de aula
+>>>>>>> ef2ac37954ceb19b73004932dbd3bdd257205146
 
 # lab-01-serverless
 
